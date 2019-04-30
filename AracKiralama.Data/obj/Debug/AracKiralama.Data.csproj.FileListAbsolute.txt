@@ -1,0 +1,17 @@
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\bin\Debug\AracKiralama.Data.dll.config
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\bin\Debug\AracKiralama.Data.dll
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\bin\Debug\AracKiralama.Data.pdb
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\bin\Debug\AracKiralama.Models.dll
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\bin\Debug\EntityFramework.dll
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\bin\Debug\AracKiralama.Models.pdb
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\bin\Debug\AracKiralama.Models.dll.config
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\bin\Debug\EntityFramework.xml
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralama.Data.csprojAssemblyReference.cache
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralama.Data.csproj.CoreCompileInputs.cache
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralama.Data.csproj.CopyComplete
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralama.Data.dll
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralama.Data.pdb
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralama.Data.Migrations.RC.resources
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralama.Data.csproj.GenerateResource.cache

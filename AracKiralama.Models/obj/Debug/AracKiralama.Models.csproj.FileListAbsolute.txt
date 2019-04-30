@@ -1,0 +1,12 @@
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Models\bin\Debug\AracKiralama.Models.dll.config
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Models\bin\Debug\AracKiralama.Models.dll
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Models\bin\Debug\AracKiralama.Models.pdb
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Models\bin\Debug\EntityFramework.dll
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Models\bin\Debug\EntityFramework.xml
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Models\obj\Debug\AracKiralama.Models.csprojAssemblyReference.cache
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Models\obj\Debug\AracKiralama.Models.csproj.CoreCompileInputs.cache
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Models\obj\Debug\AracKiralama.Models.csproj.CopyComplete
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Models\obj\Debug\AracKiralama.Models.dll
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Models\obj\Debug\AracKiralama.Models.pdb
