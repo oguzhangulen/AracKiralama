@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{158B795C-EB91-47E8-BD54-C01446336AC7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AracKiralamaFormApplication</RootNamespace>
+    <AssemblyName>AracKiralamaFormApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AracKiralama.Data">
+      <HintPath>..\..\AracKiralama-master\AracKiralama.Data\bin\Debug\AracKiralama.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="AracKiralama.Models">
+      <HintPath>..\..\AracKiralama-master\AracKiralama.Data\bin\Debug\AracKiralama.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAracKiralama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAracKiralamaIslemi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAracKiralamaIslemi.Designer.cs">
+      <DependentUpon>frmAracKiralamaIslemi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAracKiralama.Designer.cs">
+      <DependentUpon>frmAracKiralama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGirisYap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGirisYap.Designer.cs">
+      <DependentUpon>frmGirisYap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIstek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIstek.Designer.cs">
+      <DependentUpon>frmIstek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKiralanabilirAraclar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKiralanabilirAraclar.Designer.cs">
+      <DependentUpon>frmKiralanabilirAraclar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKiralanmisAraclar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKiralanmisAraclar.Designer.cs">
+      <DependentUpon>frmKiralanmisAraclar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAracKiralama.resx">
+      <DependentUpon>frmAracKiralama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAracKiralamaIslemi.resx">
+      <DependentUpon>frmAracKiralamaIslemi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGirisYap.resx">
+      <DependentUpon>frmGirisYap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIstek.resx">
+      <DependentUpon>frmIstek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKiralanabilirAraclar.resx">
+      <DependentUpon>frmKiralanabilirAraclar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKiralanmisAraclar.resx">
+      <DependentUpon>frmKiralanmisAraclar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

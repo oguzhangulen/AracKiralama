@@ -10,3 +10,15 @@ C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Models\obj\Debug\AracKiral
 C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Models\obj\Debug\AracKiralama.Models.csproj.CopyComplete
 C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Models\obj\Debug\AracKiralama.Models.dll
 C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Models\obj\Debug\AracKiralama.Models.pdb
+C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Models\bin\Debug\AracKiralama.Models.dll.config
+C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Models\bin\Debug\AracKiralama.Models.dll
+C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Models\bin\Debug\AracKiralama.Models.pdb
+C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Models\bin\Debug\EntityFramework.dll
+C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Models\bin\Debug\EntityFramework.xml
+C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Models\obj\Debug\AracKiralama.Models.csprojAssemblyReference.cache
+C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Models\obj\Debug\AracKiralama.Models.csproj.CoreCompileInputs.cache
+C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Models\obj\Debug\AracKiralama.Models.csproj.CopyComplete
+C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Models\obj\Debug\AracKiralama.Models.dll
+C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Models\obj\Debug\AracKiralama.Models.pdb
