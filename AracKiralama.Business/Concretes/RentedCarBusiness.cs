@@ -62,5 +62,21 @@ namespace AracKiralama.Business.Concretes
                 return false;
             }
         }
+        public bool Insert(RentedCar rentedCar)
+        {
+            try
+            {
+                using (var r = new RentedCarRepository())
+                {
+                    r.Insert(rentedCar);
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return false;
+            }
+        }
     }
 }

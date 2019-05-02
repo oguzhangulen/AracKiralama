@@ -58,7 +58,22 @@ namespace AracKiralama.Business.Concretes
                 return false;
             }
         }
-
+        public bool Insert(Request request)
+        {
+            try
+            {
+                using (var r = new RequestRepository())
+                {
+                    r.Insert(request);
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return false;
+            }
+        }
         public void Dispose()
         {
             GC.SuppressFinalize(true);
