@@ -20,12 +20,12 @@ namespace AracKiralama.Data.Implementation
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            GC.SuppressFinalize(true);
         }
 
         public IEnumerable<RentedCar> GetAll()
         {
-            return _context.RentedCars.Where(s => s.IsActive == true).Select(x => x);
+            return _context.RentedCars.Where(s => s.IsActive == true).ToList();
         }
 
         public RentedCar GetById(int id)

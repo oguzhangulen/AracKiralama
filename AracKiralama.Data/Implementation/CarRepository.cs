@@ -12,16 +12,16 @@ namespace AracKiralama.Data.Implementation
 {
     public class CarRepository : ICarRepository,IDisposable
     {
-        private readonly DataContext _context;
+        private readonly DataContext _context = new DataContext();
 
         public CarRepository()
         {
-            _context = new DataContext();
+            
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            GC.SuppressFinalize(true);
         }
 
         public IEnumerable<Car> GetAll()

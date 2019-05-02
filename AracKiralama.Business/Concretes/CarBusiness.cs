@@ -10,10 +10,6 @@ namespace AracKiralama.Business.Concretes
 {
     public class CarBusiness : IDisposable
     {
-        public void Dispose()
-        {
-            GC.SuppressFinalize(true);
-        }
         public IList<Car> GetAll()
         {
             try
@@ -50,9 +46,9 @@ namespace AracKiralama.Business.Concretes
         {
             try
             {
-                using(var c=new CarRepository())
+                using (var c = new CarRepository())
                 {
-                    var car=c.GetById(id);
+                    var car = c.GetById(id);
                     return (Car)car;
                 }
             }
@@ -61,6 +57,16 @@ namespace AracKiralama.Business.Concretes
                 Console.WriteLine(ex);
                 return null;
             }
+        }
+
+        public void Dispose()
+        {
+            GC.SuppressFinalize(true);
+        }
+
+        public CarBusiness()
+        {
+
         }
     }
 }

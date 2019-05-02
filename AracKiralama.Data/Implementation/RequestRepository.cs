@@ -12,10 +12,10 @@ namespace AracKiralama.Data.Implementation
 {
     public class RequestRepository : IRequestRepository,IDisposable
     {
-        private readonly DataContext _context;
+        private readonly DataContext _context = new DataContext();
         public RequestRepository()
         {
-            _context = new DataContext();
+            
         }
 
         public void Delete(Request obj)
@@ -26,12 +26,12 @@ namespace AracKiralama.Data.Implementation
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            GC.SuppressFinalize(true);
         }
 
         public IEnumerable<Request> GetAll()
         {
-            return _context.Requests.Select(s => s);
+            return _context.Requests.ToList();
         }
 
         public Request GetById(int id)

@@ -8,12 +8,8 @@ using System.Threading.Tasks;
 
 namespace AracKiralama.Business.Concretes
 {
-    public class RequestBusiness : IDisposable
+    public class RequestBusiness:IDisposable
     {
-        public void Dispose()
-        {
-            GC.SuppressFinalize(true);
-        }
         public IList<Request> GetAll()
         {
             try
@@ -61,6 +57,11 @@ namespace AracKiralama.Business.Concretes
                 Console.WriteLine(ex);
                 return false;
             }
+        }
+
+        public void Dispose()
+        {
+            GC.SuppressFinalize(true);
         }
     }
 }

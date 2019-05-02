@@ -11,10 +11,10 @@ namespace AracKiralama.Data.Implementation
 {
     public class CompanyRepository : ICompanyRepository,IDisposable
     {
-        private readonly DataContext _context;
+        private readonly DataContext _context = new DataContext();
         public CompanyRepository()
         {
-            _context = new DataContext();
+            
         }
 
         public void Dispose()

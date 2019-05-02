@@ -10,7 +10,7 @@ namespace AracKiralama.Data.Context
 {
     public class DataContext:DbContext
     {
-        public DataContext():base("name=DataContext")
+        public DataContext():base("DataContext")
         {
 
         }

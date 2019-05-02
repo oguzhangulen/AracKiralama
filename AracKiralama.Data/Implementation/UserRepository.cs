@@ -11,14 +11,14 @@ namespace AracKiralama.Data.Implementation
 {
     public class UserRepository : IUserRepository,IDisposable
     {
-        private readonly DataContext _context;
+        private readonly DataContext _context = new DataContext();
         public UserRepository()
         {
-            _context = new DataContext();
+           
         }
         public void Dispose()
         {
-            //GC.SuppressFinalize(this);
+            GC.SuppressFinalize(true);
         }
 
         public IEnumerable<User> GetAll()
