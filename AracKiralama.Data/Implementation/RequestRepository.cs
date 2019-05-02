@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace AracKiralama.Data.Implementation
 {
-    public class RequestRepository : IRequestRepository
+    public class RequestRepository : IRequestRepository,IDisposable
     {
         private readonly DataContext _context;
         public RequestRepository()
@@ -22,6 +22,11 @@ namespace AracKiralama.Data.Implementation
         {
             if (obj != null)
                 _context.Entry(obj).State = EntityState.Deleted;
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
         }
 
         public IEnumerable<Request> GetAll()

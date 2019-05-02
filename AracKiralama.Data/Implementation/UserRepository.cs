@@ -9,16 +9,21 @@ using System.Threading.Tasks;
 
 namespace AracKiralama.Data.Implementation
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository : IUserRepository,IDisposable
     {
         private readonly DataContext _context;
         public UserRepository()
         {
             _context = new DataContext();
         }
+        public void Dispose()
+        {
+            //GC.SuppressFinalize(this);
+        }
+
         public IEnumerable<User> GetAll()
         {
-            return _context.Users.Select(s => s);
+            return _context.Users.ToList();
         }
 
         public User GetById(int id)

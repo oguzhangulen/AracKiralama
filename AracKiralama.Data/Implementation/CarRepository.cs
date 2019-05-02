@@ -10,13 +10,18 @@ using System.Threading.Tasks;
 
 namespace AracKiralama.Data.Implementation
 {
-    public class CarRepository : ICarRepository
+    public class CarRepository : ICarRepository,IDisposable
     {
         private readonly DataContext _context;
 
         public CarRepository()
         {
             _context = new DataContext();
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
         }
 
         public IEnumerable<Car> GetAll()

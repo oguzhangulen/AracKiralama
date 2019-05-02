@@ -9,12 +9,17 @@ using System.Threading.Tasks;
 
 namespace AracKiralama.Data.Implementation
 {
-    public class CompanyRepository : ICompanyRepository
+    public class CompanyRepository : ICompanyRepository,IDisposable
     {
         private readonly DataContext _context;
         public CompanyRepository()
         {
             _context = new DataContext();
+        }
+
+        public void Dispose()
+        {
+            GC.SuppressFinalize(true);
         }
 
         public IEnumerable<Company> GetAll()
