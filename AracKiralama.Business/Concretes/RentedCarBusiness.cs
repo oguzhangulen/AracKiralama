@@ -53,6 +53,7 @@ namespace AracKiralama.Business.Concretes
                 using (var r=new RentedCarRepository())
                 {
                     r.Update(rentedCar);
+                    r.Save();
                     return true;
                 }
             }
@@ -69,6 +70,7 @@ namespace AracKiralama.Business.Concretes
                 using (var r = new RentedCarRepository())
                 {
                     r.Insert(rentedCar);
+                    r.Save();
                     return true;
                 }
             }

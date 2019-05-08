@@ -13,8 +13,6 @@ C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralam
 C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralama.Data.csproj.CopyComplete
 C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralama.Data.dll
 C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralama.Data.pdb
-C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralama.Data.Migrations.RC.resources
-C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralama.Data.csproj.GenerateResource.cache
 C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Data\bin\Debug\AracKiralama.Data.dll.config
 C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Data\bin\Debug\AracKiralama.Data.dll
 C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Data\bin\Debug\AracKiralama.Data.pdb
@@ -32,3 +30,5 @@ C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralam
 C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralama.Data.csproj.CopyComplete
 C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralama.Data.dll
 C:\Users\ozben\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralama.Data.pdb
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralama.Data.Migrations.rc.resources
+C:\Users\ogzha\source\repos\AracKiralama\AracKiralama.Data\obj\Debug\AracKiralama.Data.csproj.GenerateResource.cache

@@ -33,6 +33,7 @@ namespace AracKiralama.Business.Concretes
                 using (var c = new CarRepository())
                 {
                     c.Update(car);
+                    c.Save();
                     return true;
                 }
             }

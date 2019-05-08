@@ -25,7 +25,7 @@ namespace AracKiralama.Models
         public DateTime DeliveryDate { get; set; }
         public bool IsActive { get; set; }
 
-        public virtual Car Car { get; set; }
+        public int carId { get; set; }
 
         [Required]
         public string CustomerName { get; set; }

@@ -7,13 +7,13 @@ namespace AracKiralama.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class RC : IMigrationMetadata
+    public sealed partial class rc : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(RC));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(rc));
         
         string IMigrationMetadata.Id
         {
-            get { return "201904301249383_RC"; }
+            get { return "201905030958104_rc"; }
         }
         
         string IMigrationMetadata.Source

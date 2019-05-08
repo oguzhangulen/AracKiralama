@@ -60,14 +60,13 @@
     <Compile Include="Infrastructure\IRepository.cs" />
     <Compile Include="Infrastructure\IRequestRepository.cs" />
     <Compile Include="Infrastructure\IUserRepository.cs" />
-    <Compile Include="Migrations\201904301249383_RC.cs" />
-    <Compile Include="Migrations\201904301249383_RC.Designer.cs">
-      <DependentUpon>201904301249383_RC.cs</DependentUpon>
+    <Compile Include="Migrations\201905030958104_rc.cs" />
+    <Compile Include="Migrations\201905030958104_rc.Designer.cs">
+      <DependentUpon>201905030958104_rc.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
@@ -79,8 +78,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904301249383_RC.resx">
-      <DependentUpon>201904301249383_RC.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201905030958104_rc.resx">
+      <DependentUpon>201905030958104_rc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

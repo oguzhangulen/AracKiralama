@@ -3,7 +3,7 @@ namespace AracKiralama.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class RC : DbMigration
+    public partial class rc : DbMigration
     {
         public override void Up()
         {
@@ -20,14 +20,12 @@ namespace AracKiralama.Data.Migrations
                         DailyKmLimit = c.Int(nullable: false),
                         CurrentKm = c.Int(nullable: false),
                         Airbag = c.Boolean(nullable: false),
-                        BaggageCapacity = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        BaggageCapacity = c.Int(nullable: false),
                         SeatCount = c.Int(nullable: false),
-                        DailyPrice = c.Decimal(nullable: false, precision: 18, scale: 2),
-                        Company_Id = c.Int(),
+                        DailyPrice = c.Int(nullable: false),
+                        CompanyId = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Companies", t => t.Company_Id)
-                .Index(t => t.Company_Id);
+                .PrimaryKey(t => t.Id);
             
             CreateTable(
                 "dbo.Companies",
@@ -53,14 +51,12 @@ namespace AracKiralama.Data.Migrations
                         RentDate = c.DateTime(nullable: false),
                         DeliveryDate = c.DateTime(nullable: false),
                         IsActive = c.Boolean(nullable: false),
+                        carId = c.Int(nullable: false),
                         CustomerName = c.String(nullable: false),
                         CustomerSurname = c.String(nullable: false),
                         CustomerTC = c.Int(nullable: false),
-                        Car_Id = c.Int(),
                     })
-                .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Cars", t => t.Car_Id)
-                .Index(t => t.Car_Id);
+                .PrimaryKey(t => t.Id);
             
             CreateTable(
                 "dbo.Requests",
@@ -72,11 +68,9 @@ namespace AracKiralama.Data.Migrations
                         CustomerName = c.String(nullable: false),
                         CustomerSurname = c.String(nullable: false),
                         CustomerTC = c.Int(nullable: false),
-                        Car_Id = c.Int(),
+                        CarId = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Cars", t => t.Car_Id)
-                .Index(t => t.Car_Id);
+                .PrimaryKey(t => t.Id);
             
             CreateTable(
                 "dbo.Users",
@@ -86,24 +80,14 @@ namespace AracKiralama.Data.Migrations
                         Username = c.String(nullable: false),
                         Password = c.String(nullable: false),
                         FullName = c.String(nullable: false),
-                        Company_Id = c.Int(),
+                        CompanyId = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Companies", t => t.Company_Id)
-                .Index(t => t.Company_Id);
+                .PrimaryKey(t => t.Id);
             
         }
         
         public override void Down()
         {
-            DropForeignKey("dbo.Users", "Company_Id", "dbo.Companies");
-            DropForeignKey("dbo.Requests", "Car_Id", "dbo.Cars");
-            DropForeignKey("dbo.RentedCars", "Car_Id", "dbo.Cars");
-            DropForeignKey("dbo.Cars", "Company_Id", "dbo.Companies");
-            DropIndex("dbo.Users", new[] { "Company_Id" });
-            DropIndex("dbo.Requests", new[] { "Car_Id" });
-            DropIndex("dbo.RentedCars", new[] { "Car_Id" });
-            DropIndex("dbo.Cars", new[] { "Company_Id" });
             DropTable("dbo.Users");
             DropTable("dbo.Requests");
             DropTable("dbo.RentedCars");

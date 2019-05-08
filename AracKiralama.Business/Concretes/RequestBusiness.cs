@@ -49,6 +49,7 @@ namespace AracKiralama.Business.Concretes
                 using (var r = new RequestRepository())
                 {
                     r.Delete(request);
+                    r.Save();
                     return true;
                 }
             }
@@ -65,6 +66,7 @@ namespace AracKiralama.Business.Concretes
                 using (var r = new RequestRepository())
                 {
                     r.Insert(request);
+                    r.Save();
                     return true;
                 }
             }

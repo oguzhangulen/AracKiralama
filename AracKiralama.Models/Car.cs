@@ -29,12 +29,12 @@ namespace AracKiralama.Models
         [Required]
         public bool Airbag { get; set; }
         [Required]
-        public decimal BaggageCapacity { get; set; }
+        public int BaggageCapacity { get; set; }
         [Required]
         public int SeatCount { get; set; }
         [Required]
-        public decimal DailyPrice { get; set; }
+        public int DailyPrice { get; set; }
 
-        public virtual Company Company { get; set; }
+        public int CompanyId { get; set; }
     }
 }

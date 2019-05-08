@@ -24,6 +24,6 @@ namespace AracKiralama.Models
         [Required]
         public int CustomerTC { get; set; }
 
-        public virtual Car Car { get; set; }
+        public int CarId { get; set; }
     }
 }

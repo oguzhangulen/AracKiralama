@@ -20,6 +20,6 @@ namespace AracKiralama.Models
         [Required]
         public string FullName { get; set; }
 
-        public virtual Company Company { get; set; }
+        public int CompanyId { get; set; }
     }
 }
