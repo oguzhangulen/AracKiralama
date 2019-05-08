@@ -1,0 +1,59 @@
+﻿@model IEnumerable<AracKiralama.WebUI.CarWebService.Car>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.Count() == 0)
+{
+    <div class="alert alert-danger" role="alert">
+        Kiralanacak araç bulunmamaktadır...
+    </div>
+}
+else
+{
+    <div class="col">
+        <table class="table table-bordered" id="dataTable">
+            <thead>
+                <tr>
+                    <th scope="col">Araba Adı</th>
+                    <th scope="col">Model</th>
+                    <th scope="col">Airbag</th>
+                    <th scope="col">Bagaj Kapasitesi</th>
+                    <th scope="col">Günlük Ücret</th>
+                    <th scope="col" width="150px"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.ToList())
+                {
+                    <tr>
+                        <td>@item.CarName</td>
+                        <td>@item.CarModel</td>
+                        <td>
+                            @if (item.Airbag == true)
+                            {
+                                <b>Var</b>
+                            }
+                            else
+                            {
+                                <b>Yok</b>
+                            }
+                        </td>
+                        <td>@item.BaggageCapacity</td>
+                        <td>@item.DailyPrice</td>
+                        @if(item.IsAvailable==true)
+                        {
+                        <td style="max-width:20px">@Html.ActionLink("Kirala", "CarRequest", "User", item, new { @class = "btn btn-primary" })</td>
+                        }
+                        else
+                        {
+                            <td style="max-width:20px"><span>Araç Kirada</span></td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
