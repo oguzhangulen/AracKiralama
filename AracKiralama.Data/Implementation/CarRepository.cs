@@ -36,7 +36,7 @@ namespace AracKiralama.Data.Implementation
 
         public void Insert(Car obj)
         {
-            throw new NotImplementedException();
+            _context.Cars.Add(obj);
         }
 
         public void Save()

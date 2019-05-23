@@ -60,6 +60,24 @@ namespace AracKiralama.Business.Concretes
             }
         }
 
+        public bool Insert(Car car)
+        {
+            try
+            {
+                using (var c = new CarRepository())
+                {
+                    c.Insert(car);
+                    c.Save();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return false;
+            }
+        }
+
         public void Dispose()
         {
             GC.SuppressFinalize(true);
